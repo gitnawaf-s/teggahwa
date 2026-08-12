@@ -16,11 +16,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--latte);
     color: var(--espresso);
     line-height: 1.6;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -239,7 +242,8 @@ nav a:hover {
 
 .tourbrew-layout {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 4rem;
     background: var(--cream);
     padding: 3rem;
@@ -248,14 +252,14 @@ nav a:hover {
 }
 
 .tourbrew-img {
-    flex: 1;
+    flex: 1 1 400px;
+    max-width: 100%;
     border-radius: 15px;
-    width: 100%;
     object-fit: cover;
 }
 
 .tourbrew-info {
-    flex: 1.5;
+    flex: 1 1 400px;
     line-height: 1.8;
 }
 
@@ -365,6 +369,13 @@ nav a:hover {
     border: 2px solid var(--success);
 }
 
+.warning-note {
+    font-size: 0.85rem;
+    color: var(--error);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -375,7 +386,6 @@ footer {
 
 @media (max-width: 768px) {
     nav { display: none; }
-    .tourbrew-layout { flex-direction: column; }
     .hero-content h1 { font-size: 2.5rem; }
     .steps-grid { grid-template-columns: 1fr; }
     .center-step { max-width: 100%; }
