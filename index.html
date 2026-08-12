@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFBDE5TGW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,11 +9,9 @@
 
   gtag('config', 'G-9MFBDE5TGW');
 </script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Teggahwa | Khobar's Coffee Subscription</title>
-<!-- Link to the external CSS file -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,7 +37,7 @@
 
 <section id="how" class="section">
     <h2 class="section-title">How It Works</h2>
-    <div class="grid-3">
+    <div class="steps-grid">
         <div class="card">
             <div class="step-num">1</div>
             <h3>Choose a Plan</h3>
@@ -51,7 +48,7 @@
             <h3>Visit a Partner</h3>
             <p>Walk into any of our partner specialty cafes across Khobar and Dhahran.</p>
         </div>
-        <div class="card">
+        <div class="card center-step">
             <div class="step-num">3</div>
             <h3>Scan & Enjoy</h3>
             <p>Flash your digital Teggahwa pass to the barista and grab your freshly brewed cup.</p>
@@ -62,9 +59,25 @@
 <section id="cafes" class="section" style="background: var(--cream);">
     <h2 class="section-title">Proudly Pouring At</h2>
     <div class="cafe-list">
-        <div class="cafe-tag">☕ Sharg, Khobar</div>
-        <div class="cafe-tag">☕ Umq, Khobar</div>
-        <div class="cafe-tag">☕ 20+ More Locations</div>
+        <div class="cafe-tag">☕ Sharg</div>
+        <div class="cafe-tag">☕ Umq</div>
+        <div class="cafe-tag">☕ Ash</div>
+        <div class="cafe-tag">☕ Dose</div>
+        <div class="cafe-tag">☕ Half Million</div>
+        <div class="cafe-tag">☕ Elixir Bunn</div>
+        <div class="cafe-tag">☕ Earth Roastery</div>
+        <div class="cafe-tag">☕ Brew92</div>
+        <div class="cafe-tag">☕ Coyard</div>
+        <div class="cafe-tag">☕ Draft</div>
+        <div class="cafe-tag">☕ Woods</div>
+        <div class="cafe-tag">☕ Bohemia</div>
+        <div class="cafe-tag">☕ Cacti</div>
+        <div class="cafe-tag">☕ Suffix</div>
+        <div class="cafe-tag">☕ Toby's Estate</div>
+        <div class="cafe-tag">☕ Camel Step</div>
+        <div class="cafe-tag">☕ Jolt</div>
+        <div class="cafe-tag">☕ Base</div>
+        <div class="cafe-tag highlight-tag">+ 20 More Locations</div>
     </div>
 </section>
 
@@ -102,7 +115,6 @@
 
 <section id="tourbrew" class="section">
     <div class="tourbrew-layout">
-        <!-- Local image reference -->
         <img src="tourbrew-van.jpg" alt="VW Coffee Van" class="tourbrew-img">
         <div class="tourbrew-info">
             <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">🚐 TourBrew Catering</h2>
@@ -145,7 +157,7 @@
 
         <div class="form-group">
             <label>Card Number</label>
-            <input type="text" id="card" class="form-control" placeholder="1234567812345678" maxlength="16">
+            <input type="text" id="card" class="form-control" placeholder="1234567812345678" maxlength="16" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
         </div>
 
         <div class="row">
@@ -155,7 +167,7 @@
             </div>
             <div class="form-group">
                 <label>CVV</label>
-                <input type="password" id="cvv" class="form-control" placeholder="123" maxlength="3">
+                <input type="password" id="cvv" class="form-control" placeholder="123" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
             </div>
         </div>
 
@@ -202,7 +214,6 @@ function processPayment() {
 }
 </script>
 
-<!-- Botpress Chatbot Integration -->
 <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/08/03/11/20260803113134-80CH3YQL.js" defer></script>
 
